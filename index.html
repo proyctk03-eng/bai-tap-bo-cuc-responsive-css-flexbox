@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục Responsive bằng CSS Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="header">
+            <h1>Trang Web Tin Tức & Công Nghệ</h1>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Container chứa Main Content và Sidebar (Flexbox) -->
+        <div class="content-container">
+            <!-- Main Content -->
+            <main class="main-content">
+                <h2>Nội Dung Chính</h2>
+                <article>
+                    <h3>Ứng dụng của CSS Flexbox trong thiết kế web hiện đại</h3>
+                    <p>CSS Flexbox (Flexible Box Layout) là một mô hình bố cục một chiều được thiết kế để phân phối không gian và căn chỉnh các phần tử con dọc theo một trục (trục chính hoặc trục phụ).</p>
+                    <p>Flexbox đặc biệt mạnh mẽ khi cần tạo ra các thành phần giao diện linh hoạt, tự động co giãn theo kích thước của màn hình và thiết bị của người dùng.</p>
+                </article>
+                <article>
+                    <h3>Tại sao nên dùng Flexbox để xây dựng bố cục Responsive?</h3>
+                    <p>Nhờ các thuộc tính như flex-grow, flex-shrink, flex-basis và flex-direction, nhà phát triển có thể dễ dàng chuyển đổi từ bố cục đa cột trên máy tính để bàn sang bố cục một cột trên điện thoại di động chỉ với một vài dòng Media Queries.</p>
+                </article>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <h3>Nội Dung Phụ</h3>
+                <div class="widget">
+                    <h4>Tin vắn công nghệ</h4>
+                    <ul>
+                        <li><a href="#">Khám phá tính năng mới của CSS</a></li>
+                        <li><a href="#">Tối ưu hóa hiệu năng website</a></li>
+                        <li><a href="#">Xu hướng thiết kế UI/UX 2026</a></li>
+                    </ul>
+                </div>
+                <div class="widget ad-box">
+                    <h4>Thông báo</h4>
+                    <p>Khóa học Lập trình Frontend chất lượng cao tại CodeGym.</p>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Bản quyền thuộc về TechNews. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
